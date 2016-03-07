@@ -6,3 +6,13 @@
 （2）server提供加法计算功能，client提出请求，格式为: +, 操作数1, 操作数2，如+，1，2   
 （3）server接收请求后将计算结果返回给client   
 （4）输入q表示结束client，同时断开与server的连接。   
+
+运行方法：    
+```shell
+gcc -o server server.c
+gcc -o client client.c
+./server
+
+另一个terminal: ./client
+                +,100,200
+```
